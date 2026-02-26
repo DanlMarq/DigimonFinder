@@ -1,0 +1,192 @@
+/*--------------------------------- Main Page----------------------------------------*/
+/* App & Page Backgrounds */
+.sapMApp, .sapMPage > section {
+  background-color: #1a1a1a !important;
+}
+
+/* Top Header Bar */
+.sapMPageHeader .sapMIBar {
+  background-color: #1a1a1a !important;
+  border-bottom: 2px solid rgba(239, 168, 16, 0.878) !important;
+  box-shadow: none !important;
+  background-image: none !important;
+}
+
+/* Nav Bar Button */
+.sapMPageHeader .sapMBtnIcon {
+  color: rgba(239, 168, 16, 0.878) !important;
+}
+
+/* The Row with the Filter */
+.filterRow {
+  margin-top: 25px !important;
+  padding: 0 20px !important;
+}
+
+.filterRow > *:last-child {
+  margin-left: auto !important;
+}
+
+/* Header Title Text */
+.sapMPageHeader .sapMTitle {
+  color: rgba(239, 168, 16, 0.878) !important;
+  font-weight: bold !important;
+  letter-spacing: 1px;
+}
+
+/* The Digimon Cards */
+.darkCard {
+  background-color: #ffffff !important;
+  width: 180px !important;
+  max-width: 180px !important;
+  height: 180px !important;
+  min-height: auto !important;
+  margin: 10px auto !important;
+  padding: 10px !important;
+  border-radius: 20px !important;
+  border: 1px solid rgba(198, 198, 198, 0.3) !important;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6) !important;
+  transition: all 0.2s ease-in-out !important;
+  user-select: none !important;
+  -webkit-user-select: none !important;
+  cursor: pointer !important;
+}
+
+/* Card Hover Animation */
+.darkCard:hover {
+  box-shadow: 0px 8px 15px rgba(48, 48, 48, 0.878) !important;
+  border-color: rgba(239, 168, 16, 0.878) !important;
+}
+
+/* Digimon Names (Text inside the cards) */
+.darkCard .sapMText {
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  margin-bottom: 10px !important;
+  padding-bottom: 4px !important;
+  border-bottom: 2px solid rgba(239, 168, 16, 0.878) !important;
+  display: inline-block !important;
+  text-align: center !important;
+}
+
+/* Search Bar Styling */
+.sapMSF {
+  background-color: #1a1a1a !important;
+  padding: 10px !important;
+  margin-bottom: 25px !important;
+  transform: translateY(-13px) !important;
+}
+
+.sapMSF.sapMSFFocused .sapMSFI, .sapMSFI:focus {
+  border-color: rgba(198, 198, 198, 0.878) !important;
+  box-shadow: none !important;
+}
+
+/*--------------------------------- Detail Page----------------------------------------*/
+.detailCard {
+  background-color: #ffffff !important;
+  max-width: 350px !important;
+  margin: 40px auto !important;
+  padding: 30px 20px !important;
+  border-radius: 24px !important;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.8) !important;
+  border: 1px solid rgba(198, 198, 198, 0.5) !important;
+  align-items: center !important;
+}
+
+.detailCard .sapMText {
+  color: #444444 !important;
+  font-size: 1.1rem !important;
+  font-weight: bold !important;
+  margin-bottom: 8px !important;
+}
+
+.detailName {
+  font-size: 2.2rem !important;
+  color: #1a1a1a !important;
+  text-transform: uppercase !important;
+  letter-spacing: 2px !important;
+  margin-bottom: 20px !important;
+  border-bottom: 3px solid rgba(239, 168, 16, 0.878) !important;
+  padding-bottom: 5px !important;
+}
+
+.detailBadge {
+  background-color: rgba(239, 168, 16, 0.878) !important;
+  color: #ffffff !important;
+  padding: 8px 20px !important;
+  border-radius: 50px !important;
+  font-size: 1.2rem !important;
+  font-weight: bold !important;
+  margin-top: 15px !important;
+  box-shadow: 0px 4px 10px rgba(239, 168, 16, 0.4) !important;
+  display: inline-block !important;
+}
+
+.detailCard .sapMImg {
+  width: 200px !important;
+  height: 200px !important;
+  margin-bottom: 15px !important;
+}
+
+/* Favorite Button Style */
+/* Removes background and border*/
+.orangeGhostButton {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Style for the text and the icon inside the button */
+.orangeGhostButton .sapMBtnContent,
+.orangeGhostButton .sapMBtnIcon {
+  display: flex !important;
+  align-items: center;
+  color: rgba(239, 168, 16, 0.878) !important;
+  font-size: 1.3rem !important;
+  font-weight: bold !important;
+}
+
+/* Adjusts the size of the icon specifically */
+.orangeGhostButton .sapUiIcon {
+  margin-right: 12px;
+  font-size: 1.5rem !important;
+}
+
+/* Glow when hover */
+.orangeGhostButton:hover .sapMBtnContent,
+.orangeGhostButton:hover .sapMBtnIcon {
+  text-shadow: 0px 0px 8px rgba(239, 168, 16, 0.5) !important;
+  filter: brightness(1.2);
+}
+
+/* Styles of the "favorites" label */
+.filterTitle {
+  color: rgba(239, 168, 16, 0.878) !important;
+  font-weight: bold !important;
+  font-size: 0.9rem !important;
+  letter-spacing: 1px !important;
+  margin-bottom: 8px !important;
+  padding-bottom: 2px !important;
+  border-bottom: 2px solid rgba(239, 168, 16, 0.878) !important;
+  text-transform: uppercase !important;
+}
+
+/* Positions Checkbox */
+.favFilterContainer {
+  margin-right: 30px !important;
+  margin-left: 0 !important;
+  align-items: center !important;
+}
+
+/* Alignment */
+.favFilterContainer .sapMCb {
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 45px !important;
+}
+
+/* Hides the invisible text element */
+.favFilterContainer .sapMCb label {
+  display: none !important;
+}

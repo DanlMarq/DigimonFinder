@@ -1,0 +1,24 @@
+{
+	"id": "a33333e5-26ba-4aca-a14a-4ee8cd0f3f3b",
+	"createdAt": "2026-02-24T15:08:39.000Z",
+	"createdBy": "admin",
+	"attributes": [],
+	"locales": [
+		{
+			"isoCode": "EN",
+			"locale": "en"
+		}
+	],
+	"name": "digimonexercise",
+	"description": null,
+	"fallbackLocale": "EN",
+	"application": "digimonexercise",
+	"ver": "26.02.26.1717",
+	"package": "c040a37a-6c88-4ce4-8d88-f0eced375bc9",
+	"active": true,
+	"deleted": false,
+	"baseModelId": null,
+	"enhancedBy": [],
+	"baseModel": null,
+	"apps": []
+}

@@ -1,0 +1,81 @@
+{
+	"id": "c040a37a-6c88-4ce4-8d88-f0eced375bc9",
+	"createdAt": "2026-02-26T17:16:07.000Z",
+	"createdBy": "admin",
+	"git": {
+		"remote": "https://github.com/DanlMarq/DigimonFinder.git",
+		"branch": "master"
+	},
+	"name": "Digimon-interview",
+	"description": null,
+	"ver": "26.02.26.1824",
+	"enableCICD": true,
+	"internalReadOnly": false,
+	"oeVersion": null,
+	"excludeTemplateFiles": false,
+	"roles": [],
+	"apps": [
+		{
+			"id": "01b8c3fd-4033-4ae3-9343-15a2ba7387c0",
+			"application": "digimonexercise",
+			"title": "",
+			"description": ""
+		}
+	],
+	"api": [
+		{
+			"id": "f87eace7-c288-4c45-bff3-41d9d298a0ba",
+			"name": "Digimon Api",
+			"description": null,
+			"apiGroup": null
+		}
+	],
+	"odataSource": [],
+	"odataMock": [],
+	"dictionary": [],
+	"jsclass": [],
+	"jsscript_group": [],
+	"theme": [],
+	"theme_generator": [],
+	"pdf": [],
+	"rulesengine": [],
+	"reports": [],
+	"api_authentication": [],
+	"api_group": [],
+	"tile": [],
+	"tile_layout": [],
+	"category": [],
+	"tilegroup_layout": [],
+	"launchpad": [],
+	"launchpad_layout": [],
+	"certificates": [],
+	"role": [],
+	"systems": [],
+	"doc": [],
+	"wf_notifications": [],
+	"department": [],
+	"script_scheduler": [],
+	"wf_definition": [],
+	"connector": [],
+	"i18n": [
+		{
+			"id": "a33333e5-26ba-4aca-a14a-4ee8cd0f3f3b",
+			"name": "digimonexercise",
+			"description": null
+		}
+	],
+	"events": [],
+	"code_snippets": [],
+	"wf_determination": [],
+	"wf_taskaction": [],
+	"theme_ui5": [],
+	"webapp": [],
+	"ui5_control": [],
+	"ai_agent": [],
+	"ai_model": [],
+	"ai_prompt": [],
+	"ai_tool": [],
+	"ai_guardrail": [],
+	"path_rewrite": [],
+	"vault": []
+}

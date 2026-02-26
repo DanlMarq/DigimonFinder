@@ -1,0 +1,471 @@
+{
+	"id": "f87eace7-c288-4c45-bff3-41d9d298a0ba",
+	"createdAt": "2026-02-24T13:55:50.000Z",
+	"createdBy": "admin",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "e1729ca5-585d-41ef-a37a-e15507e1ecc7",
+			"method": "GET",
+			"path": "/name/(name)",
+			"description": "",
+			"parameters": [
+				{
+					"name": "name",
+					"description": "",
+					"required": true,
+					"inPath": true,
+					"value": "",
+					"default": "agumon",
+					"example": ""
+				}
+			],
+			"headers": [],
+			"responses": [
+				{
+					"id": "be7ebc47-f19b-448a-b3c7-7a1ede97f046",
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"content": [
+						{
+							"id": "89d5c6dc-64a9-4bbe-eed9-343f079ea4d0",
+							"name": "DigiName",
+							"objectType": "reference"
+						}
+					]
+				}
+			],
+			"content": [],
+			"auth": [],
+			"endpoints": []
+		},
+		{
+			"id": "f58fe27d-b8ac-4f13-b752-4d93ab02f3dc",
+			"method": "GET",
+			"path": "/level/(level)",
+			"description": "",
+			"parameters": [
+				{
+					"name": "level",
+					"description": "",
+					"required": true,
+					"inPath": true,
+					"value": "",
+					"default": "rookie",
+					"example": ""
+				}
+			],
+			"headers": [],
+			"responses": [
+				{
+					"id": "6c73eca8-b9e7-4116-8a42-62ee264f47d4",
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"content": [
+						{
+							"id": "246cee17-a402-43a3-fafe-f8f067865030",
+							"name": "Digilevel",
+							"objectType": "reference",
+							"items": [
+								{
+									"name": "",
+									"objectType": "string",
+									"required": false,
+									"children": []
+								},
+								{
+									"name": "",
+									"objectType": "string",
+									"required": false,
+									"children": []
+								}
+							]
+						}
+					]
+				}
+			],
+			"content": [],
+			"auth": [],
+			"endpoints": []
+		},
+		{
+			"id": "473337a8-8705-43f7-a0d6-3cfcc83c46b9",
+			"method": "GET",
+			"path": "",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"id": "621f11e3-cd3f-4138-d85a-0112237b9d7c",
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"content": [
+						{
+							"id": "83bb6465-9286-4014-cdbe-b32f34524f36",
+							"name": "Digimon",
+							"objectType": "reference",
+							"isArray": true
+						}
+					]
+				}
+			],
+			"content": [],
+			"auth": [],
+			"endpoints": []
+		}
+	],
+	"definitions": [
+		{
+			"id": "5db624d5-3f8e-44e6-fad9-85465825cce0",
+			"name": "Digimon",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "ef561637-6598-4cc1-fa52-6f9aa54febc0",
+					"name": "name",
+					"objectType": "string",
+					"required": false,
+					"parent": "51f61d5c-cc98-44d6-f505-a43cc7994b4b",
+					"example": "Koromon",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "4e4ea932-e81c-4d40-b0b0-1081e401e691",
+					"name": "img",
+					"objectType": "string",
+					"required": false,
+					"parent": "51f61d5c-cc98-44d6-f505-a43cc7994b4b",
+					"example": "https://digimon.shadowsmith.com/img/koromon.jpg",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "1e9d0c4d-25b4-477d-8ac9-3a273436782c",
+					"name": "level",
+					"objectType": "string",
+					"required": false,
+					"parent": "51f61d5c-cc98-44d6-f505-a43cc7994b4b",
+					"example": "In Training",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "51f61d5c-cc98-44d6-f505-a43cc7994b4b",
+					"name": "",
+					"objectType": "object",
+					"required": false,
+					"parent": "",
+					"isParent": true,
+					"enableValueHelp": false,
+					"canAddSubNode": true,
+					"enabled": true,
+					"hideNameField": false,
+					"children": [
+						{
+							"id": "ef561637-6598-4cc1-fa52-6f9aa54febc0",
+							"name": "name",
+							"objectType": "string",
+							"required": false,
+							"parent": "51f61d5c-cc98-44d6-f505-a43cc7994b4b",
+							"example": "Koromon",
+							"isParent": false,
+							"enableValueHelp": false,
+							"canAddSubNode": false,
+							"enabled": true,
+							"hideNameField": false,
+							"children": []
+						},
+						{
+							"id": "4e4ea932-e81c-4d40-b0b0-1081e401e691",
+							"name": "img",
+							"objectType": "string",
+							"required": false,
+							"parent": "51f61d5c-cc98-44d6-f505-a43cc7994b4b",
+							"example": "https://digimon.shadowsmith.com/img/koromon.jpg",
+							"isParent": false,
+							"enableValueHelp": false,
+							"canAddSubNode": false,
+							"enabled": true,
+							"hideNameField": false,
+							"children": []
+						},
+						{
+							"id": "1e9d0c4d-25b4-477d-8ac9-3a273436782c",
+							"name": "level",
+							"objectType": "string",
+							"required": false,
+							"parent": "51f61d5c-cc98-44d6-f505-a43cc7994b4b",
+							"example": "In Training",
+							"isParent": false,
+							"enableValueHelp": false,
+							"canAddSubNode": false,
+							"enabled": true,
+							"hideNameField": false,
+							"children": []
+						}
+					]
+				}
+			],
+			"type": "object"
+		},
+		{
+			"id": "b05a5f26-73c4-4f8d-ce63-e39bf8e9d935",
+			"name": "DigiName",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "27710168-d30b-4a96-f672-c8d27f4740a8",
+					"name": "name",
+					"objectType": "string",
+					"required": false,
+					"parent": "7b679e80-9966-4ec8-bcac-d811a86c6c1e",
+					"example": "Agumon",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "798e1c63-9e78-4963-9c7a-9f43afae21bd",
+					"name": "img",
+					"objectType": "string",
+					"required": false,
+					"parent": "7b679e80-9966-4ec8-bcac-d811a86c6c1e",
+					"example": "https://digimon.shadowsmith.com/img/agumon.jpg",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "2b5813b6-3b60-4699-f380-94d9feac7e34",
+					"name": "level",
+					"objectType": "string",
+					"required": false,
+					"parent": "7b679e80-9966-4ec8-bcac-d811a86c6c1e",
+					"example": "Rookie",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "7b679e80-9966-4ec8-bcac-d811a86c6c1e",
+					"name": "",
+					"objectType": "object",
+					"required": false,
+					"parent": "",
+					"isParent": true,
+					"enableValueHelp": false,
+					"canAddSubNode": true,
+					"enabled": true,
+					"hideNameField": false,
+					"children": [
+						{
+							"id": "27710168-d30b-4a96-f672-c8d27f4740a8",
+							"name": "name",
+							"objectType": "string",
+							"required": false,
+							"parent": "7b679e80-9966-4ec8-bcac-d811a86c6c1e",
+							"example": "Agumon",
+							"isParent": false,
+							"enableValueHelp": false,
+							"canAddSubNode": false,
+							"enabled": true,
+							"hideNameField": false,
+							"children": []
+						},
+						{
+							"id": "798e1c63-9e78-4963-9c7a-9f43afae21bd",
+							"name": "img",
+							"objectType": "string",
+							"required": false,
+							"parent": "7b679e80-9966-4ec8-bcac-d811a86c6c1e",
+							"example": "https://digimon.shadowsmith.com/img/agumon.jpg",
+							"isParent": false,
+							"enableValueHelp": false,
+							"canAddSubNode": false,
+							"enabled": true,
+							"hideNameField": false,
+							"children": []
+						},
+						{
+							"id": "2b5813b6-3b60-4699-f380-94d9feac7e34",
+							"name": "level",
+							"objectType": "string",
+							"required": false,
+							"parent": "7b679e80-9966-4ec8-bcac-d811a86c6c1e",
+							"example": "Rookie",
+							"isParent": false,
+							"enableValueHelp": false,
+							"canAddSubNode": false,
+							"enabled": true,
+							"hideNameField": false,
+							"children": []
+						}
+					]
+				}
+			],
+			"type": "object"
+		},
+		{
+			"id": "96e281d9-6def-4d4b-d1de-a33b225ce106",
+			"name": "Digilevel",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "b70d43f7-cace-4e71-87a6-9c21bada61d8",
+					"name": "name",
+					"objectType": "string",
+					"required": false,
+					"parent": "51c5b98c-6805-4715-a0c3-aa1d7043b709",
+					"example": "Agumon",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "0b33770f-134b-465e-8a7e-771992f44bd1",
+					"name": "img",
+					"objectType": "string",
+					"required": false,
+					"parent": "51c5b98c-6805-4715-a0c3-aa1d7043b709",
+					"example": "https://digimon.shadowsmith.com/img/agumon.jpg",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "a26a620b-81f7-4e33-e4a7-9e654df96af5",
+					"name": "level",
+					"objectType": "string",
+					"required": false,
+					"parent": "51c5b98c-6805-4715-a0c3-aa1d7043b709",
+					"example": "Rookie",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "51c5b98c-6805-4715-a0c3-aa1d7043b709",
+					"name": "",
+					"objectType": "object",
+					"required": false,
+					"parent": "",
+					"isParent": true,
+					"enableValueHelp": false,
+					"canAddSubNode": true,
+					"enabled": true,
+					"hideNameField": false,
+					"children": [
+						{
+							"id": "b70d43f7-cace-4e71-87a6-9c21bada61d8",
+							"name": "name",
+							"objectType": "string",
+							"required": false,
+							"parent": "51c5b98c-6805-4715-a0c3-aa1d7043b709",
+							"example": "Agumon",
+							"isParent": false,
+							"enableValueHelp": false,
+							"canAddSubNode": false,
+							"enabled": true,
+							"hideNameField": false,
+							"children": []
+						},
+						{
+							"id": "0b33770f-134b-465e-8a7e-771992f44bd1",
+							"name": "img",
+							"objectType": "string",
+							"required": false,
+							"parent": "51c5b98c-6805-4715-a0c3-aa1d7043b709",
+							"example": "https://digimon.shadowsmith.com/img/agumon.jpg",
+							"isParent": false,
+							"enableValueHelp": false,
+							"canAddSubNode": false,
+							"enabled": true,
+							"hideNameField": false,
+							"children": []
+						},
+						{
+							"id": "a26a620b-81f7-4e33-e4a7-9e654df96af5",
+							"name": "level",
+							"objectType": "string",
+							"required": false,
+							"parent": "51c5b98c-6805-4715-a0c3-aa1d7043b709",
+							"example": "Rookie",
+							"isParent": false,
+							"enableValueHelp": false,
+							"canAddSubNode": false,
+							"enabled": true,
+							"hideNameField": false,
+							"children": []
+						}
+					]
+				}
+			],
+			"type": "object"
+		}
+	],
+	"documentation": [],
+	"name": "Digimon Api",
+	"endpoint": "https://digimon-api.vercel.app/api/digimon",
+	"ver": "26.02.26.1717",
+	"version": null,
+	"description": null,
+	"mediaType": null,
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "",
+	"about": "<p><br></p>",
+	"enableProxy": true,
+	"forwardProxy": null,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": true,
+	"enableScriptEditor": true,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": false,
+	"useOwnProcess": false,
+	"package": "c040a37a-6c88-4ce4-8d88-f0eced375bc9",
+	"apiGroup": null,
+	"apiFormat": 1,
+	"roles": []
+}
